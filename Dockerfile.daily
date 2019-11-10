@@ -1,4 +1,4 @@
-FROM wonderfall/nginx-php:7.1
+FROM php:7.2-alpine
 
 ENV UID=991 GID=991 \
     UPLOAD_MAX_SIZE=10G \
@@ -13,6 +13,7 @@ ENV UID=991 GID=991 \
 
 RUN apk -U upgrade \
  && apk add -t build-dependencies \
+    nginx \
     gnupg \
     tar \
     build-base \
@@ -54,7 +55,7 @@ VOLUME /data /config /apps2 /nextcloud/themes /php/session
 EXPOSE 8888
 
 LABEL description="A server software for creating file hosting services" \
-      nextcloud="Nextcloud daily" \
-      maintainer="Wonderfall <wonderfall@targaryen.house>"
+      nextcloud="Nextcloud daily/latest" \
+      maintainer="shinobit"
 
 CMD ["run.sh"]
