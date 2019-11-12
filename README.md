@@ -1,9 +1,9 @@
 ## shinobit/nextcloud
 
 
-[![](https://images.microbadger.com/badges/version/wonderfall/nextcloud.svg)](http://microbadger.com/images/wonderfall/nextcloud "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/wonderfall/nextcloud.svg)](http://microbadger.com/images/wonderfall/nextcloud "Get your own image badge on microbadger.com")
-
 ![](https://s32.postimg.org/69nev7aol/Nextcloud_logo.png)
+
+**This is a fork from Wonderfall/docker-nextcloud, intented to be updated more often. I also added the imagemagick extension to PHP to get a nice "All checks passed" in Settings, security and setup. Please find the original explanation below.
 
 **This image was made for my own use and I have no intention to make this official. Support won't be regular so if there's an update, or a fix, you can open a pull request. Any contribution is welcome, but please be aware I'm very busy currently. Before opening an issue, please check if there's already one related. Also please use Github instead of Docker Hub, otherwise I won't see your comments. Thanks.**
 
