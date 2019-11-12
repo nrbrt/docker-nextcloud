@@ -28,6 +28,7 @@ RUN apk -U upgrade \
     tzdata \
     g++ \
     imagemagick-dev \
+    imagemagick \
     make \
  && pecl install \
     smbclient \
